@@ -46,8 +46,8 @@ class Interval(object):
     def find_indexes(self, merge, current_val):
         if len(merge) == 1:
             merge_start = merge_end = merge[0]
-        
-        merge_start, merge_end = merge[0], merge[2]
+        else:
+            merge_start, merge_end = merge[0], merge[2]
 
         if len(current_val) == 1:
             val_start = val_end = current_val[0]
